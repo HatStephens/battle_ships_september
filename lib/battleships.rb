@@ -32,11 +32,6 @@ class BattleShips < Sinatra::Base
   	erb :show_board
   end
 
-  # get '/new_game_retry' do
-  # 	erb :new_game_retry
-  # end
-
-  # start the server if ruby file executed directly
   run! if app_file == $0
 
 end
