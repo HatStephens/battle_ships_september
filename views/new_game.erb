@@ -1,9 +1,10 @@
 <% if flash[:error] %>
-<p>DO THIS</p>
+<p>You need to pass a name.</p>
 <% end %>
 
 <p>What's your name?</p>
-<form action='/show_board' method='post'>
+<form action='/create_player' method='get'>
 	<input type='text' name='name' placeholder='Please enter your name here...'/> 
 	<button>Bring it on!</button>
 </form>
+<%= session.inspect %>

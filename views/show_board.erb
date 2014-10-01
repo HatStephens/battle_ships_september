@@ -1,4 +1,9 @@
 
-<h1>Here is your board, <%= @player_one.name %>:</h1>
-<%= @board_one.grid %>
+<h1>Here is your board, <%= @name %>:</h1>
+<%= @board.grid %>
+
+<p>Please wait whilst we try and find you an opponent...</p>
+
+<meta http-equiv='refresh' content='5'/>
+<%= session.inspect %>
 
